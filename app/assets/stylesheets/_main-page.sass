@@ -332,3 +332,62 @@
       .description
         color: $blue
         margin-top: 30px
+
+.slider-container
+  position: relative
+  height: 70vh
+  margin: 100px 0
+  // +clearfix
+  .blockquote-slider-img-container, .blockquotes
+    position: relative
+    height: inherit
+    // width: 100%
+    float: left
+    @media #{$large-up}
+      width: 50%
+  .blockquote-slider-img
+    .makler-name
+      position: absolute
+      background-color: rgba(#253137, 0.8)
+      width: 250px
+      height: 90px
+      padding: 15px 30px
+      color: white
+      right: 0
+      bottom: 100px
+      .name
+        font-size: 1.375em
+        +medium
+      .position
+        font-size: 0.875em
+        +light
+  .blockquotes
+    background-color: $main
+    color: white
+    padding: 100px
+    .title
+      font-size: 2em
+      text-transform: uppercase
+      +bold
+    .subtitle
+      +light
+      opacity: 0.75
+      max-width: 400px
+    .blockquote-slider-text
+      li
+        position: relative
+        +georgia
+        font-size: 1.375em
+        font-style: italic
+        max-width: 80%
+        margin-top: 100px
+        &:after
+          content: '\0022'
+          font-size: 180px
+          color: #36464E
+          opacity: 0.5
+          line-height: 1
+          position: absolute
+          bottom: 0
+          right: 0
+          +translate(0,100%)
