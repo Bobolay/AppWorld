@@ -30,14 +30,14 @@
         span або
         a.sign-in вхід
     .large-6.medium-6.small-12.columns
-      ul.slider-1
+      ul.banner-slider
         li
           .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup')})"
 
 .problems-container
   .row
     .columns
-      p.title Чи знайомі вам ці проблеми?
+      p.big-title Чи знайомі вам ці проблеми?
       .row
         .large-4.medium-4.small-12.columns.first
           .problem-block
@@ -64,7 +64,7 @@
 .solution-container
   .row.inner-text
     .columns
-      p.title
+      p.big-title
         | рішення є на 
         span maklera
         sup .org
@@ -80,11 +80,11 @@
           a.orange-button зареєструватись
 
 .opportunities-container
-  p.title
+  p.section-title
     | можливості 
     span maklera
     sup .org
-  p.subtitle
+  p.section-subtitle
     | Наш сайт має багато класних додаткових функцій, якими Вам буде зручно користуватись з любих комп'ютерів, мобільних телефонів та планшетів.
   .row.opportunity
     .large-5.medium-12.columns.align-right.text-block
@@ -141,48 +141,32 @@
         p e-mail сповіщення
       p.description Сповіщення на електронну пошту про нові добавлені оголошення, які підходять Вашим збереженим фільтрам.
 
-.slider-container
-  .blockquote-slider-img-container
-    ul.blockquote-slider-img
-      li
-        .img-background style="background-image: url(#{asset_path('photo/tyolachka.jpg')})"
-        .makler-name
-          p.name Анна Тарасюк
-          p.position Маклер
-      li
-        .img-background style="background-image: url(#{asset_path('photo/tyolachka.jpg')})"
-        .makler-name
-          p.name Анна Тарасюк
-          p.position Маклер
-      li
-        .img-background style="background-image: url(#{asset_path('photo/tyolachka.jpg')})"
-        .makler-name
-          p.name Анна Тарасюк
-          p.position Маклер
-      li
-        .img-background style="background-image: url(#{asset_path('photo/tyolachka.jpg')})"
-        .makler-name
-          p.name Анна Тарасюк
-          p.position Маклер
-      li
-        .img-background style="background-image: url(#{asset_path('photo/tyolachka.jpg')})"
-        .makler-name
-          p.name Анна Тарасюк
-          p.position Маклер
-  .blockquotes
-    p.title маклери говорять
-    p.subtitle Маклера які скористалися нашим сервісом діляться своїми враженнями
-    ul.blockquote-slider-text
-      li Інтеграція, аналізуючи результати рекламної кампанії, позитивно позиціонує тактичний показ банера. Стимулювання збуту без оглядки на авторитети індуктивно притягує метод вивчення ринку.
-      li Ipsam nostrum est ut accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cupiditate perferendis molestiae ex. In perspiciatis, nam fugiat, voluptatum excepturi consequatur explicabo tenetur placeat officia distinctio.
-      li Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cupiditate perferendis molestiae ex. In perspiciatis, nam fugiat, voluptatum excepturi consequatur explicabo tenetur placeat officia distinctio. Ipsam nostrum est ut accusamus.
-      li Інтеграція, аналізуючи результати рекламної кампанії, позитивно позиціонує тактичний показ банера. Стимулювання збуту без оглядки на авторитети індуктивно притягує метод вивчення ринку.
-      li Ipsam nostrum est ut accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cupiditate perferendis molestiae ex. In perspiciatis, nam fugiat, voluptatum excepturi consequatur explicabo tenetur placeat officia distinctio.
-    #bx-pager
-      a.pager-square data-slide-index="0"
-      a.pager-square data-slide-index="1"
-      a.pager-square data-slide-index="2"
-      a.pager-square data-slide-index="3"
-      a.pager-square data-slide-index="4"
+= render "slider"
+
+.usability-container
+  p.section-title як користуватись сервісом?
+  p.section-subtitle Три простих відеоуроки, які допоможуть вам легко розібратись у інтерфейсі та процесі добавляння оголошень
+  .video-step-wrapper
+    .step-block-container
+      .step-block.active-step-block
+        span 1
+        p.step крок
+        p.description Основні розділи сервісу та їх функціонал
+      .step-block
+        span 2
+        p.step крок
+        p.description Додавання оголошень та правильність замовлення
+      .step-block
+        span 3
+        p.step крок
+        p.description Розсилка оголошень
+    .line-container
+      .line.active-line-position
+    .video-container
+      .video.first.show-it
+      .video.second
+      .video.third
+
+  
 
 = render "form"

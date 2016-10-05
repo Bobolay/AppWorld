@@ -85,6 +85,42 @@
       svg
         fill: $main
         fill-opacity: 1
+    
+    .accept-field
+      font-style: italic
+      font-size: 14px
+      text-align: center
+      margin: 20px 0
+      .accept-icon
+        position: relative
+        width: 24px
+        height: 24px
+        display: inline-block
+        top: 6px
+        margin-right: 6px
+        cursor: pointer
+        svg
+          width: 24px
+          height: 24px
+          fill: $blue
+          position: absolute
+          left: 0
+          top: 0
+        .checked
+          display: none
+          svg
+            fill: $orange
+          &.active
+            display: block
+      .accept
+        display: inline-block
+        color: $blue
+      a
+        display: inline-block
+        color: $main
+        margin-left: 5px
+
     button
       display: block
       margin: 30px auto 0
+      +medium

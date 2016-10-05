@@ -9,4 +9,6 @@
 #= require plugins/jquery.bxslider
 #= require bxslider
 
+#= require video-slider
+
 #= require form
