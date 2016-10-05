@@ -1,0 +1,147 @@
+.fullpage-banner
+  .learn-more
+    = inline_svg "svg/mouse.svg"
+    p дізнайтеся більше
+  .top-nav-wrapper
+    .logo
+      = inline_svg "svg/logo.svg"
+    .top-nav
+      li
+        a про сервіс
+      li
+        a переваги
+      li
+        a можливості
+      li
+        a тарифи
+      li
+        a зареєструватись
+  .row.inner
+    .large-6.medium-6.small-12.columns.banner-text
+      p.title Втомились тратити свій час на неактуальні оголошення?
+      .middle-text
+        = inline_svg "svg/logo.svg"
+        p.subtitle
+          | Легкий і зручний сервіс актуальних оголошень від маклерів для маклерів.
+          span &mdash;
+      .button-container
+        p.regular Ви маклер?
+        a.orange-button зареєструйтесь
+        span або
+        a.sign-in вхід
+    .large-6.medium-6.small-12.columns
+      ul.slider-1
+        li
+          .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup')})"
+
+.problems-container
+  .row
+    .columns
+      p.title Чи знайомі вам ці проблеми?
+      .row
+        .large-4.medium-4.small-12.columns.first
+          .problem-block
+            span 01
+            .text
+              p.name час
+              p.description Щоденні рутинні розсилки на електронну пошту, Вайбер, поновлення оголошень та щоденний перегляд одних і тих самих оновлених або продубльованих оголошень.
+            .img-background style="background-image: url(#{asset_path('photo/problem1.jpg')})"
+        .large-4.medium-4.small-12.columns.second
+          .problem-block
+            span 02
+            .text
+              p.name неактуальність
+              p.description Дуже велика кількість «липових» оголошень та оголошень «не співпрацюю».
+            .img-background style="background-image: url(#{asset_path('photo/problem2.jpg')})"
+        .large-4.medium-4.small-12.columns.third
+          .problem-block
+            span 03
+            .text
+              p.name один фільтр пошуку
+              p.description Для кожного нового клієнта потрібно постійно змінювати параметри фільтру-пошуку.
+            .img-background style="background-image: url(#{asset_path('photo/problem3.jpg')})"
+
+.solution-container
+  .row.inner-text
+    .columns
+      p.title
+        | рішення є на 
+        span maklera
+        sup .org
+      = inline_svg "svg/logo.svg"
+      .text-container
+        p.description
+          | З 
+          span maklera
+          sup .org 
+          | Ви зберігаєте масу часу, який витрачали на щоденний пошук та передзвін оголошень.
+        .button-container
+          p.regular Приєднуйтесь!
+          a.orange-button зареєструватись
+
+.opportunities-container
+  p.title
+    | можливості 
+    span maklera
+    sup .org
+  p.subtitle
+    | Наш сайт має багато класних додаткових функцій, якими Вам буде зручно користуватись з любих комп'ютерів, мобільних телефонів та планшетів.
+  .row.opportunity
+    .large-5.medium-12.columns.align-right.text-block
+      .background-opportunity-icon
+        = inline_svg "svg/opport-1.svg"
+      .opportunity-icon
+        = inline_svg "svg/opport-1.svg"
+      p.name збережені фільтри
+      p.description Можливість зберегти до 40 фільтрів пошуку об’єктів по клієнтах. І отримувати сповіщення про нові пропозиції для клієнта по фільтру.
+    .large-6.large-push-1.medium-12.columns.end
+      .img-background style="background-image: url(#{asset_path('photo/screen-1.jpg')})"
+  .row.opportunity  
+    .large-6.medium-12.columns.text-block.go-right
+      .background-opportunity-icon
+        = inline_svg "svg/opport-2.svg"
+      .opportunity-icon
+        = inline_svg "svg/opport-2.svg"
+      p.name обрав і відправив
+      p.description Легкий формат надсилання обраних повідомлень клієнтам - одним посиланням (лінком). Контактні дані в отриманих клієнтом оголошеннях будуть Ваші (дивись “Закритий доступ до оголошень”).
+    .large-6.medium-12.columns.go-left
+      .img-background style="background-image: url(#{asset_path('photo/screen-2.jpg')})"
+  .row.opportunity
+    .large-6.medium-12.columns.align-right.text-block
+      .background-opportunity-icon
+        = inline_svg "svg/opport-3.svg"
+      .opportunity-icon
+        = inline_svg "svg/opport-3.svg"
+      p.name своя база
+      p.description Кожен маклер може мати свою базу об’єктів на maklera.org. Легкий і зручний доступ до своєї сформованої бази об’єктів з любого ПК чи гаджета для того, щоб швидко надіслати пропозиції клієнту одним лінком.
+    .large-6.medium-12.columns.end
+      .img-background style="background-image: url(#{asset_path('photo/screen-3.jpg')})"
+  .row.opportunities
+    .large-3.medium-6.small-12.columns.opportunity-short
+      = inline_svg "svg/opport-4.svg"
+      .name
+        p актуальність
+      p.description Перевірка (нашим оператором) актуальності кожні 7 днів. А також можливість самостійно повідомити оператора про неактуальне/недостовірне оголошення.
+    .large-3.medium-6.small-12.columns.opportunity-short
+      = inline_svg "svg/opport-5.svg"
+      .name
+        p створення оголошення у три кроки
+      ul.description
+        li &mdash; Заповнення основних даних;
+        li &mdash; Завантаження фотографій;
+        li &mdash; Попередній перегляд, для перевірки та публікація;
+    .large-3.medium-6.small-12.columns.opportunity-short
+      = inline_svg "svg/opport-6.svg"
+      .name
+        p закритий доступ до оголошень
+      p.description Надіславши клієнту об’єкти із своєї бази чи підібрані оголошення маклерів-партнерів, клієнт не зможе перейти по сайту далі запропонованих вами оголошень і зателефонувати іншому маклеру. В отриманих оголошеннях Ваш клієнт буде бачити тільки Ваші дані.
+    .large-3.medium-6.small-12.columns.opportunity-short
+      = inline_svg "svg/opport-7.svg"
+      .name
+        p e-mail сповіщення
+      p.description Сповіщення на електронну пошту про нові добавлені оголошення, які підходять Вашим збереженим фільтрам.
+
+
+
+
+= render "form"

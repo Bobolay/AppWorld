@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 559.4 73.1" enable-background="new 0 0 559.4 73.1" xml:space="preserve">
+<polygon fill="#08887B" points="559.4,45.7 466.6,45.7 455,16.6 455,0 559.4,0 "/>
+<text transform="matrix(1 0 0 1 79.4847 72.1297)" fill="#455A64" font-family="'Roboto-Bold'" font-size="77.8412" letter-spacing="3">MAKLERA</text>
+<text transform="matrix(1 0 0 1 468.0966 32.3226)" fill="#FFFFFF" font-family="'Roboto-Medium'" font-size="44.0057">.org</text>
+<g>
+	<g>
+		<g>
+			<polygon fill="#08887B" points="43.4,53.8 54.8,65.6 54.8,16.6 43.5,27.8 			"/>
+			<polygon fill="#08887B" points="38.6,16.5 27.5,27.7 16.5,16.5 0,16.5 27.3,42.9 54.9,16.5 			"/>
+		</g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="27.319" y1="40.9449" x2="54.8224" y2="40.9449">
+			<stop  offset="0" style="stop-color:#036D5F"/>
+			<stop  offset="1" style="stop-color:#08887B"/>
+		</linearGradient>
+		<polygon fill="url(#SVGID_1_)" points="27.3,42.9 43.5,27.7 43.3,53.8 54.7,65.4 54.8,16.5 38.5,16.5 27.4,27.5 		"/>
+	</g>
+	<polygon fill="#F26F21" points="27,61.8 38,72.9 54.5,73.1 27,46.5 -0.3,72.6 15.9,72.7 	"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-0.5187" y1="48.4261" x2="27.012" y2="48.4261">
+		<stop  offset="0" style="stop-color:#F26F21"/>
+		<stop  offset="1" style="stop-color:#D75C27"/>
+	</linearGradient>
+	<polygon fill="url(#SVGID_2_)" points="-0.4,72.7 15.9,72.7 26.9,61.8 27,46.5 11.1,61.4 11.1,35.4 -0.5,24.1 	"/>
+</g>
+</svg>
