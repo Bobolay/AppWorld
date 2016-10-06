@@ -140,3 +140,25 @@ ul
     &.active
       background-color: $orange
       opacity: 1
+
+.columns
+  position: relative
+
+.animated-text-1, .animated-text-2, .animated-text-3, .animated-text-4, .animated-text-5
+  display: none
+  position: absolute
+  @media #{$large-up}
+    display: block
+.animated-text-1
+  top: 50px
+.animated-text-2
+  bottom: -150px
+  left: 100px
+.animated-text-3
+  top: -180px
+.animated-text-4
+  right: -50px
+  bottom: 50px
+.animated-text-5
+  top: -80px
+  right: -100px
