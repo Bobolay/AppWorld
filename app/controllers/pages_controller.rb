@@ -11,6 +11,9 @@ class PagesController < ApplicationController
 
   end
 
+  def temp
+  end
+
   private
 
   def set_page_instance

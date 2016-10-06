@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   controller :pages do
     get "about-us", action: "about_us"
     # get "contact-us", action: "contact_us"
+    get "temp" => "temp", as: "terms_of_used"
   end
+
+
 
   # mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # mount Ckeditor::Engine => '/ckeditor'

@@ -13,7 +13,7 @@
       li
         a можливості
       li
-        a тарифи
+        a інструкція
       li
         a зареєструватись
   .row.inner
@@ -170,6 +170,40 @@
       .video
         .img-background style="background-image: url(#{asset_path('photo/video-3.jpg')})"
 
-  
-
 = render "form"
+
+.contacts-container
+  .row
+    .large-4.medium-12.columns
+      p.title Про проект
+      p.description Appartments world &mdash;  це закритий портал для ріелторів. Тут зібрані ріелтори які чесно працюють на ринку нерухомості. У нас опубліковуються тільки реальні та АКТУАЛЬНІ пропозиції з продажу та оренди нерухомості!
+    .large-3.large-push-2.medium-6.columns
+      p.title Контакти
+      ul
+        li
+          | вул. Театральна 11, м. Львів
+          span = inline_svg "svg/contacts-1.svg"
+        li
+          | +38 (032) 294 10 12
+          span = inline_svg "svg/contacts-2.svg"
+        li
+          | Appworld@gmail.com
+          span = inline_svg "svg/contacts-3.svg"
+    .large-3.medium-6.columns.social-container
+      a.social
+        = inline_svg "svg/social-1.svg"
+      a.social
+        = inline_svg "svg/social-2.svg"
+      a.social
+        = inline_svg "svg/social-3.svg"
+      a.social
+        = inline_svg "svg/social-4.svg"
+
+.footer
+  .row
+    .columns
+      .v-studio
+        = inline_svg "svg/voronin-logo.svg"
+        a href="" Handcrafted in Voronin Design Studio
+      .appworld
+        p &copy; 2016 TM "Dellavie"
