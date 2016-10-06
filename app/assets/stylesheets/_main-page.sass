@@ -89,7 +89,7 @@
     .subtitle
       color: $blue
       font-size: 1.25rem
-      font-family: 'Georgia'
+      +georgia
       font-style: italic
       position: relative
       padding-left: 30px
@@ -105,13 +105,16 @@
         margin-bottom: 30px
       span
         color: $blue
-        font-family: 'Georgia'
+        +georgia
         font-style: italic
         margin: 0 20px
       .sign-in
         text-transform: uppercase
         font-weight: bold
         color: $main
+        +transition(0.2s)
+        &:hover
+          color: $orange
   .banner-slider
     height: 80vh
     position: relative
@@ -493,6 +496,8 @@
   background-color: #2C393F
   .v-studio
     float: left
+    color: #AFBDC4
+    +transition(0.25s)
     svg
       fill: #AFBDC4
       width: 25px
@@ -501,16 +506,11 @@
       position: relative
       top: 5px
       +transition(0.25s)
-    a
-      display: inline-block
-      text-decoration: none
-      color: #AFBDC4
-      +transition(0.25s)
+    span
       @media #{$small-only}
         display: none
     &:hover
-      a
-        color: $orange
+      color: $orange
       svg
         fill: $orange
   .appworld

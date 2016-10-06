@@ -7,15 +7,15 @@
       = inline_svg "svg/logo.svg"
     .top-nav
       li
-        a про сервіс
+        a href="#problems" про сервіс
       li
-        a переваги
+        a href="#opportunities" можливості
       li
-        a можливості
+        a href="#testimonials" відгуки
       li
-        a інструкція
+        a href="#instruction" відео-інструкція
       li
-        a зареєструватись
+        a href="#form" зареєструватись
   .row.inner
     .large-6.medium-6.small-12.columns.banner-text
       p.title Втомились тратити свій час на неактуальні оголошення?
@@ -26,15 +26,15 @@
           span &mdash;
       .button-container
         p.regular Ви маклер?
-        a.orange-button зареєструйтесь
+        a.orange-button href="#form" зареєструйтесь
         span або
-        a.sign-in вхід
+        a.sign-in href="#" вхід
     .large-6.medium-6.small-12.columns
       ul.banner-slider
         li
           .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup')})"
 
-.problems-container
+.problems-container#problems
   .row
     .columns
       p.big-title Чи знайомі вам ці проблеми?
@@ -61,7 +61,7 @@
               p.description Для кожного нового клієнта потрібно постійно змінювати параметри фільтру-пошуку.
             .img-background style="background-image: url(#{asset_path('photo/problem3.jpg')})"
 
-.solution-container
+.solution-container#advantages
   .row.inner-text
     .columns
       p.big-title
@@ -77,9 +77,9 @@
           | Ви зберігаєте масу часу, який витрачали на щоденний пошук та передзвін оголошень.
         .button-container
           p.regular Приєднуйтесь!
-          a.orange-button зареєструватись
+          a.orange-button href="#form" зареєструватись
 
-.opportunities-container
+.opportunities-container#opportunities
   p.section-title
     | можливості 
     span maklera
@@ -143,7 +143,7 @@
 
 = render "slider"
 
-.usability-container
+.usability-container#instruction
   p.section-title як користуватись сервісом?
   p.section-subtitle Три простих відеоуроки, які допоможуть вам легко розібратись у інтерфейсі та процесі добавляння оголошень
   .video-step-wrapper
@@ -202,8 +202,8 @@
 .footer
   .row
     .columns
-      .v-studio
+      a.v-studio href="http://voroninstudio.eu/uk" target="_blank"
         = inline_svg "svg/voronin-logo.svg"
-        a href="" Handcrafted in Voronin Design Studio
+        span Handcrafted in Voronin Design Studio
       .appworld
         p &copy; 2016 TM "Dellavie"

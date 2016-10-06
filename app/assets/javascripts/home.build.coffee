@@ -11,4 +11,6 @@
 
 #= require video-slider
 
+#= require main
+
 #= require form
