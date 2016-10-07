@@ -158,6 +158,10 @@ ul
     left: 50%
     +translate(-50%,0)
     bottom: 50px
+  @media #{$landscape}
+    left: 50%
+    +translate(-50%,0)
+    bottom: 50px
 
 .columns
   position: relative
@@ -167,10 +171,11 @@ ul
   position: absolute
   @media #{$large-up}
     display: block
+    z-index: 1
 .animated-text-1
   top: 50px
 .animated-text-2
-  bottom: -150px
+  bottom: -130px
   left: 100px
 .animated-text-3
   top: -180px
