@@ -66,6 +66,7 @@
       left: 30px
       padding: 5px 20px
       border-left: 1px solid $grey
+      display: none
       li
         display: inline-block
         margin: 0 10px
@@ -82,8 +83,9 @@
       .logo
         svg
           width: 120px
+    @media #{$large-up}
       .top-nav
-        display: none
+        display: block
   .inner
     +clearfix
     position: relative
@@ -200,6 +202,8 @@
   .second, .third
     @media #{$small-only}
       margin-top: 20px
+    @media #{$medium-only}
+      margin-top: 30px
   .problem-block
     position: relative
     padding-top: 60px
@@ -241,6 +245,16 @@
       .img-background
         height: 300px
         margin-top: 20px
+    @media #{$medium-only}
+      .text
+        margin-left: 50px
+        height: auto
+      .name
+        font-size: 2em
+      .description
+        font-size: 1em
+      .img-background
+        height: 400px
 
 .solution-container
   position: relative
@@ -295,6 +309,12 @@
       padding-left: 4rem
       .description
         font-size: 1rem
+  @media #{$medium-only}
+    padding-bottom: 40vh
+    &:after
+      height: 50vh
+      background-size: contain
+      bottom: -100px
 
 .opportunities-container
   overflow: hidden
@@ -364,15 +384,23 @@
       .img-background
         +scale(1)
         height: 300px
-
+    @media #{$medium-only}
+      padding: 80px 0 0
+      .text-block
+        height: auto
+      .img-background
+        +scale(1)
+        height: 400px
+      .description
+        max-width: none
 
   .opportunities
     .opportunity-short
-      padding-left: 25px
+      padding-left: 50px
       position: relative
       svg
         position: absolute
-        left: -6px
+        left: 0.9375em
         top: 0
         fill: $orange
       .name
@@ -407,18 +435,26 @@
         height: 40px
       .description
         margin-top: 20px
+    @media #{$medium-only}
+      margin-top: 50px
+      .opportunity-short
+        margin-top: 50px
+        height: 200px
 
 .slider-container
   position: relative
-  height: 100vh
   margin: 100px 0 50px
   overflow: hidden
   @media #{$large-up}
     height: 70vh
   .blockquote-slider-img-container
-    height: 30%
+    height: 200px
+    @media #{$medium-only}
+      height: 400px
   .blockquotes
-    height: 70%
+    height: 300px
+    @media #{$medium-only}
+      height: 400px
   .blockquote-slider-img-container, .blockquotes
     position: relative
     float: left
@@ -471,8 +507,8 @@
           line-height: 1
           position: absolute
           bottom: 0
-          right: 0
-          +translate(0,100%)
+          right: 10%
+          +translate(0,-50%)
   @media #{$small-only}
     margin: 50px 0 0
     .blockquote-slider-img
@@ -486,12 +522,34 @@
     .blockquotes
       padding: 30px
       .title
-        font-size: 1.25rem
+        font-size: 0.875rem
+      .subtitle
+        display: none
+      .blockquote-slider-text
+        li
+          max-width: 100%
+          margin-top: 30px
+          font-size: 1em
+  @media #{$medium-only}
+    .blockquote-slider-img
+      .makler-name
+        bottom: 30px
+        width: 200px
+        height: 80px
+        padding: 10px 20px
+        .name
+          font-size: 1.25em
+    .blockquotes
+      padding: 50px
+      .title
+        font-size: 1em
+      .subtitle
+        display: none
       .blockquote-slider-text
         li
           max-width: 100%
           margin-top: 50px
-          font-size: 1.25em
+          font-size: 1rem
 
 
 .usability-container
