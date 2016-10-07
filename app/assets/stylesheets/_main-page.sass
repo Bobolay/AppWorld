@@ -25,9 +25,9 @@
     +translate(0,-50%)
     right: 0
     display: none
-    @media #{$large-up}
-      &:before, &:after
-        display: block
+  @media #{$large-up}
+    &:before, &:after
+      display: block
   .learn-more
     position: absolute
     bottom: 30px
@@ -389,8 +389,9 @@
         height: auto
       .name
         margin: 10px 0
+        font-size: 1.5rem
       .description
-        font-size: 1rem
+        font-size: 1em
       .img-background
         +scale(1)
         height: 300px
@@ -440,11 +441,12 @@
         svg
           left: 0.625rem
           top: -5px
-      .name
-        padding-left: 30px
-        height: 40px
-      .description
-        margin-top: 20px
+        .name
+          padding-left: 30px
+          height: auto
+          padding-bottom: 10px
+        .description
+          margin-top: 20px
     @media #{$medium-only}
       margin-top: 50px
       .opportunity-short
@@ -544,6 +546,8 @@
           max-width: 100%
           margin-top: 30px
           font-size: 1em
+          &:after
+            +translate(0,0)
   @media #{$medium-only}
     .blockquote-slider-img
       .makler-name
@@ -661,7 +665,7 @@
           display: block
   @media #{$small-only}
     .video-step-wrapper
-      margin: 50px 0.625em
+      margin: 10px 0.625em 50px
       .step-block
         height: 80px
         padding-top: 42px
@@ -716,7 +720,6 @@
     .social
       width: 41px
       height: 41px
-      // float: right
       background-color: white
       display: inline-block
       margin: 6px
@@ -739,6 +742,7 @@
         svg
           fill: white
   @media #{$small-only}
+    padding: 80px 0 50px
     .title
       margin-top: 30px
     .social-container
