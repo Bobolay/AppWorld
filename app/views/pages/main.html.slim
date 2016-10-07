@@ -16,8 +16,10 @@
         a href="#instruction" відео-інструкція
       li
         a href="#form" зареєструватись
+  .mobile-banner
+    .img-background style="background-image: url(#{asset_path('photo/banner-mobile.jpg')})"
   .row.inner
-    .large-6.medium-6.small-12.columns.banner-text
+    .large-6.medium-6.small-8.columns.banner-text
       p.title Втомились тратити свій час на неактуальні оголошення?
       .middle-text
         = inline_svg "svg/logo.svg"
@@ -30,9 +32,9 @@
         span або
         a.sign-in href="#" вхід
       .animated-text-2 = inline_svg "svg/text-2.svg"
-    .large-6.medium-6.small-12.columns
+    .large-6.medium-6.small-4.columns
       .animated-text-1
-        = inline_svg "svg/text-1.svg", class: "svg"
+        = inline_svg "svg/text-1.svg"
       ul.banner-slider
         li
           .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup')})"
