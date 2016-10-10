@@ -10,5 +10,7 @@ $(document).on "ready", ->
 
   $(".menu-button").on "click", ()->
     $('.menu').toggleClass("opened")
+    $('body').css("overflow", "hidden")
   $(".close-button").on "click", ()->
     $('.menu').toggleClass("opened")
+    $('body').css("overflow", "initial")
