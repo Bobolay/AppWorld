@@ -19,3 +19,5 @@
 #= require main
 
 #= require form
+
+#= require height
