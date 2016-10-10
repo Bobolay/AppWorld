@@ -36,11 +36,11 @@ if(is_touch_screen || width < 640) {
         }
     }
 
-    $('.bottom').on("click", function(){
-        var $slider = $(".banner-container:first")
+    $('.learn-more').on("click", function(){
+        var $slider = $(".fullpage-banner:first")
         var slider_height = $slider.first().height()
         var $next_section = $slider.next()
-        var next_section_top = $next_section.offset().top-50
+        var next_section_top = $next_section.offset().top
         scroll_home_banner(next_section_top)
     })
 
@@ -49,13 +49,13 @@ if(is_touch_screen || width < 640) {
         if(e && e.ctrlKey) {
             return true
         }
-        var $slider = $(".banner-container:first")
+        var $slider = $(".fullpage-banner:first")
         if($slider.length == 0){
             return;
         }
         var slider_height = $slider.first().height()
         var $next_section = $slider.next()
-        var next_section_top = $next_section.offset().top-50
+        var next_section_top = $next_section.offset().top
 
         var scroll_top = $("body").scrollTop() || $(window).scrollTop()
         scroll_top = Math.ceil(scroll_top)

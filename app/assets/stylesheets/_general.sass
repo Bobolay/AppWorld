@@ -32,6 +32,7 @@ a
   text-decoration: none
 
 $main: #00887A
+$dark-main: #00665B
 $dark: #445963
 $orange: #FF6E00
 $grey: rgba(0,0,0,0.2)
@@ -189,3 +190,30 @@ ul
 .animated-text-5
   top: -80px
   right: -100px
+
+.social-container
+  +clearfix
+  .social
+    width: 41px
+    height: 41px
+    background-color: white
+    display: inline-block
+    margin: 6px
+    cursor: pointer
+    border-radius: 20px
+    position: relative
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3)
+    +transition(0.25s)
+    svg
+      fill: $main
+      width: 28px
+      height: 28px
+      position: absolute
+      top: 50%
+      left: 50%
+      +translate(-50%,-50%)
+      +transition(0.25s)
+    &:hover
+      background-color: $orange
+      svg
+        fill: white

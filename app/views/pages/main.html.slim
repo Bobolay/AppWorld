@@ -1,9 +1,10 @@
-.fullpage-banner
+= render "menu"
+.fullpage-banner#banner
   .learn-more
     = inline_svg "svg/mouse.svg"
     p дізнайтеся більше
   .top-nav-wrapper
-    .logo
+    a.logo href="#banner"
       = inline_svg "svg/logo.svg"
     .top-nav
       li
@@ -16,6 +17,8 @@
         a href="#instruction" відео-інструкція
       li
         a href="#form" зареєструватись
+    .menu-button
+      .menu-button-lines
   .mobile-banner
     .img-background style="background-image: url(#{asset_path('photo/banner-mobile.jpg')})"
   .row.inner
