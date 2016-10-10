@@ -6,6 +6,8 @@ $(document).on "ready", ->
     target_top = $(href).offset().top
 
     $('.menu').toggleClass("opened")
+    $('body').css("overflow", "initial")
+    
     $("body").animate({scrollTop: target_top})
 
   $(".menu-button").on "click", ()->

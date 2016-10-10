@@ -48,7 +48,23 @@
     @media #{$large-up}
       display: block
   .top-nav-wrapper
+    position: fixed
     padding: 30px
+    width: 100%
+    left: 0
+    top: 0
+    z-index: 10
+    +transition-property(all)
+    +transition-duration(1s)
+    +translate(0,-100%)
+    +clearfix
+    &.scrolled, &.visible
+      +translate(0,0)
+      position: fixed
+    &.visible
+      position: absolute
+    &.scrolled
+      background-color: #fff
     .logo
       display: inline-block
       svg
@@ -118,8 +134,10 @@
   .inner
     +clearfix
     position: relative
+    margin-top: 100px
     @media #{$small-only}
-      height: calc(100vh - 60px)
+      height: calc(100vh)
+      margin-top: 60px
   .banner-text
     position: relative
     margin-top: 10vh

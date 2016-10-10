@@ -37,6 +37,7 @@ if(is_touch_screen || width < 640) {
     }
 
     $('.learn-more').on("click", function(){
+        alert('qwe')
         var $slider = $(".fullpage-banner:first")
         var slider_height = $slider.first().height()
         var $next_section = $slider.next()
