@@ -138,21 +138,27 @@
     +clearfix
     position: relative
     margin-top: 100px
+    height: calc(100% - 100px)
     @media #{$small-only}
       height: calc(100vh)
       margin-top: 60px
+      height: calc(100% - 60px)
   .banner-text
     position: relative
-    margin-top: 10vh
     z-index: 1
+    height: 100%
     .title
+      position: absolute
+      top: 5%
       color: $dark
       font-size: 2rem
       text-transform: uppercase
       font-weight: bold
       line-height: 2.25rem
     .middle-text
-      margin: 5vh 0 10vh
+      position: absolute
+      top: 45%
+      +translate(0,-50%)
       svg
         width: 50vw
         height: 100px
@@ -170,6 +176,8 @@
         left: 0
         top: 0
     .button-container
+      position: absolute
+      bottom: 10%
       .regular
         color: $blue
         margin-bottom: 30px
@@ -186,15 +194,10 @@
         &:hover
           color: $orange
     @media #{$small-only}
-      // margin-top: 5vh
-      margin-top: 30px
-      // height: 100%
       .title
         font-size: 1.25rem
         line-height: 1.6rem
       .middle-text
-        // margin: 10vh 0
-        margin: 50px 0
         svg
           width: 180px
           height: 40px
@@ -202,8 +205,6 @@
         font-size: 0.875em
         line-height: 1rem
       .button-container
-        // position: absolute
-        // bottom: 50px
         .regular, span
           display: none
         .sign-in
@@ -216,20 +217,21 @@
         font-weight: bold
         line-height: 2.6rem
       .middle-text
-        margin: 50px 0 100px
+        top: 30%
         svg
           width: 500px
           height: 100px
+      .button-container
+        bottom: 40%
   
   .mobile-banner
     position: absolute
-    height: 50%
     width: 50%
-    right: -10%
+    right: 0
     bottom: 0
-    .img-background
-      background-repeat: no-repeat
-      background-size: contain
+    // .img-background
+    //   background-repeat: no-repeat
+    //   background-size: contain
     @media #{$large-up}
       display: none
 

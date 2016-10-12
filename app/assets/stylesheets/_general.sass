@@ -1,8 +1,5 @@
-body
-  font-size: 16px
+html
   font-family: 'Roboto', sans-serif
-  @media #{$small-only}
-    font-size: 14px
 
 =filter($filter-type,$filter-amount)
   -webkit-filter: $filter-type+unquote('(#{$filter-amount})')
@@ -66,6 +63,7 @@ ul
 
 .orange-button
   position: relative
+  display: inline-block
   text-transform: uppercase
   text-align: center
   color: #fff
@@ -180,8 +178,8 @@ ul
 .animated-text-1
   top: 50px
 .animated-text-2
-  bottom: -130px
-  left: 100px
+  left: 50%
+  bottom: -120px
 .animated-text-3
   top: -180px
 .animated-text-4

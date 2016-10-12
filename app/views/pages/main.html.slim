@@ -19,8 +19,8 @@
         a href="#form" зареєструватись
     .menu-button
       .menu-button-lines
-  .mobile-banner
-    .img-background style="background-image: url(#{asset_path('photo/banner-mobile.jpg')})"
+  img.mobile-banner src=asset_path('photo/banner-mobile.jpg')
+    / .img-background style="background-image: url(#{asset_path('photo/banner-mobile.jpg')})"
   .row.inner
     .large-6.medium-6.small-8.columns.banner-text
       p.title Втомились тратити свій час на неактуальні оголошення?
@@ -34,7 +34,7 @@
         a.orange-button href="#form" зареєструйтесь
         span або
         a.sign-in href="#" вхід
-      .animated-text-2 = inline_svg "svg/text-2.svg"
+        .animated-text-2 = inline_svg "svg/text-2.svg"
     .large-6.medium-6.small-4.columns
       .animated-text-1
         = inline_svg "svg/text-1.svg"
