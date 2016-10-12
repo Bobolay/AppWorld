@@ -1,7 +1,7 @@
 is_touch_screen = 'ontouchstart' in document.documentElement;
 width = window.innerWidth;
 
-if(is_touch_screen || width < 640) {
+if (is_touch_screen && width < 640) {
     console.log("it works")
 } else {
     scroll_home_banner = function(top) {
@@ -37,7 +37,6 @@ if(is_touch_screen || width < 640) {
     }
 
     $('.learn-more').on("click", function(){
-        alert('qwe')
         var $slider = $(".fullpage-banner:first")
         var slider_height = $slider.first().height()
         var $next_section = $slider.next()

@@ -3,7 +3,7 @@
   height: 100vh
   position: relative
   overflow: hidden
-  +transition(999999s)
+  // +transition(999999s)
   &:before
     content: ''
     position: absolute
@@ -53,7 +53,7 @@
     width: 100%
     left: 0
     top: 0
-    z-index: 10
+    z-index: 110
     +transition-property(all)
     +transition-duration(1s)
     +translate(0,-100%)
@@ -319,16 +319,6 @@
 .solution-container
   position: relative
   padding-top: 50px
-  padding-bottom: 50vh
-  &:after
-    content: ''
-    position: absolute
-    width: 100%
-    height: 80vh
-    background-image: url(#{asset_path('photo/girl-bg.jpg')})
-    background-repeat: no-repeat
-    background-size: cover
-    bottom: 0
   .inner-text
     position: relative
     z-index: 1
@@ -356,25 +346,18 @@
     .regular
       color: $blue
       margin-bottom: 30px
+  img
+    position: relative
   @media #{$small-only}
     padding-top: 0
-    padding-bottom: 30vh
-    &:after
-      height: 40vh
-      background-size: contain
-      bottom: -100px
     svg
       width: 300px
     .text-container
       padding-left: 4rem
       .description
         font-size: 1rem
-  @media #{$medium-only}
-    padding-bottom: 40vh
-    &:after
-      height: 50vh
-      background-size: contain
-      bottom: -100px
+  @media #{$large-up}
+    margin-top: -100px
 
 .opportunities-container
   overflow: hidden
