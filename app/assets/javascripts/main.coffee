@@ -5,7 +5,7 @@ $(document).on "ready", ->
     href = $link.attr("href")
     target_top = $(href).offset().top
 
-    $('.menu').toggleClass("opened")
+    $('.menu').removeClass("opened")
     $('body').css("overflow", "initial")
     
     $("body").animate({scrollTop: target_top})
