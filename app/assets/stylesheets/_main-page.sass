@@ -3,7 +3,6 @@
   height: 100vh
   position: relative
   overflow: hidden
-  // +transition(999999s)
   &:before
     content: ''
     position: absolute
@@ -26,6 +25,10 @@
     +translate(0,-50%)
     right: 0
     display: none
+  @media only screen and (max-width: 1024px) and (orientation: landscape)
+    height: auto
+    padding-bottom: 100px
+
   @media #{$large-up}
     &:before, &:after
       display: block

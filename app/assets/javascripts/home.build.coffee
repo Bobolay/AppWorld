@@ -20,4 +20,4 @@
 
 #= require form
 
-#= require height
+#= require fullpage_banner_height
