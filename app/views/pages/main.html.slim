@@ -153,7 +153,7 @@
         p e-mail сповіщення
       p.description Сповіщення на електронну пошту про нові добавлені оголошення, які підходять Вашим збереженим фільтрам.
 
-= render "slider"
+//= render "slider"
 
 .usability-container#instruction
   p.section-title як користуватись сервісом?
@@ -189,19 +189,20 @@
     .large-4.medium-12.columns
       p.title Про проект
       p.description Appartments world &mdash;  це закритий портал для ріелторів. Тут зібрані ріелтори які чесно працюють на ринку нерухомості. У нас опубліковуються тільки реальні та АКТУАЛЬНІ пропозиції з продажу та оренди нерухомості!
-    .xlarge-3.xlarge-push-2.large-4.large-push-1.medium-6.columns
+    / .xlarge-3.xlarge-push-2.large-4.large-push-1.medium-6.columns
+    .xlarge-3.large-4.medium-6.columns
       p.title Контакти
       ul
-        li
-          | вул. Театральна 11, м. Львів
-          span = inline_svg "svg/contacts-1.svg"
+        / li
+        /   | вул. Театральна 11, м. Львів
+        /   span = inline_svg "svg/contacts-1.svg"
         li
           | +38 (032) 294 10 12
           span = inline_svg "svg/contacts-2.svg"
         li
           | Appworld@gmail.com
           span = inline_svg "svg/contacts-3.svg"
-    .large-3.medium-6.columns.social-container
+    //.large-3.medium-6.columns.social-container
       a.social
         = inline_svg "svg/social-1.svg"
       a.social
@@ -218,4 +219,4 @@
         = inline_svg "svg/voronin-logo.svg"
         span Handcrafted in Voronin Design Studio
       .appworld
-        p &copy; 2016 TM "Dellavie"
+        p &copy; 2016 Maklera

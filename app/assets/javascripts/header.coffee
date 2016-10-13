@@ -11,7 +11,7 @@ banner_selector = ""
 setClosingTimeout = ()->
 
   $top_nav = $(this)
-  visibility_duration = 2000
+  visibility_duration = 3000
   window.top_nav_timeout =  setTimeout(
     ()->
       #alert("setClosingTimeout")
