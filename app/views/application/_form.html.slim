@@ -40,9 +40,8 @@
       .columns
         .accept-field
           .accept-icon
-            / input
-            = inline_svg "svg/checkbox-empty.svg"
-            .checked = inline_svg "svg/checkbox-full.svg"
+            input#accept type="checkbox"
+            label for="accept"
           p.accept
             | Я приймаю умови
           a href=terms_of_used_path
