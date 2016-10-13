@@ -288,7 +288,6 @@
       margin: 30px 0 10px
     .description
       color: $dark
-      font-size: 1.125rem
       font-weight: 300
       line-height: 24px
     .img-background
@@ -316,6 +315,8 @@
         font-size: 1em
       .img-background
         height: 400px
+    @media #{$large-up}
+      font-size: 1.125em
 
 .solution-container
   position: relative
@@ -357,8 +358,6 @@
       padding-left: 4rem
       .description
         font-size: 1rem
-  @media #{$large-up}
-    margin-top: -100px
 
 .opportunities-container
   overflow: hidden
@@ -697,6 +696,10 @@
         z-index: 1
         &.show-it
           display: block
+        iframe
+          width: 100%
+          height: 100%
+          
   @media #{$small-only}
     .video-step-wrapper
       margin: 10px 0.625em 50px
