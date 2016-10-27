@@ -41,7 +41,11 @@
         = inline_svg "svg/text-1.svg"
       ul.banner-slider
         li
-          .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup')})"
+          .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup-1.png')})"
+        li
+          .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup-2.png')})"
+        li
+          .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup-3.png')})"
 
 .problems-container#problems
   .row
@@ -95,7 +99,7 @@
     span maklera
     sup .org
   p.section-subtitle
-    | Наш сайт має багато класних додаткових функцій, якими Вам буде зручно користуватись з любих комп'ютерів, мобільних телефонів та планшетів.
+    | Наш сайт має багато класних додаткових функцій, якими Вам буде зручно користуватись з будь яких комп'ютерів, мобільних телефонів та планшетів.
   .row.opportunity
     .large-5.medium-12.columns.align-right.text-block
       .background-opportunity-icon
@@ -215,8 +219,9 @@
 .footer
   .row
     .columns
-      a.v-studio href="http://voroninstudio.eu/uk" target="_blank"
+      .v-studio
         = inline_svg "svg/voronin-logo.svg"
-        span Handcrafted in Voronin Design Studio
+        span Handcrafted in 
+        a href="http://voroninstudio.eu/uk" target="_blank" Voronin Design Studio
       .appworld
         p &copy; 2016 Maklera
