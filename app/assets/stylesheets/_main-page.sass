@@ -149,25 +149,25 @@
       position: absolute
       top: 5%
       color: $dark
-      font-size: 2rem
+      font-size: 1.5rem
+      line-height: 1.75rem
       text-transform: uppercase
       font-weight: bold
-      line-height: 2.25rem
     .middle-text
       position: absolute
       top: 45%
       +translate(0,-50%)
       svg
-        width: 50vw
+        width: 40vw
         height: 100px
     .subtitle
       color: $blue
-      font-size: 1.25rem
+      font-size: 1rem
+      line-height: 1.25rem
       +georgia
       font-style: italic
       position: relative
       padding-left: 30px
-      line-height: 1.5rem
       max-width: 400px
       span
         position: absolute
@@ -178,7 +178,7 @@
       bottom: 10%
       .regular
         color: $blue
-        margin-bottom: 30px
+        margin-bottom: 20px
       span
         color: $blue
         +georgia
@@ -208,19 +208,19 @@
         .sign-in
           display: block
           margin-top: 20px
-    @media #{$xlarge-up}
+    @media #{$xxlarge-up}
       .title
-        font-size: 2.25rem
+        font-size: 2rem
         text-transform: uppercase
         font-weight: bold
-        line-height: 2.6rem
+        line-height: 2.5rem
       .middle-text
-        top: 30%
+        top: 40%
         svg
           width: 500px
           height: 100px
       .button-container
-        bottom: 40%
+        bottom: 25%
   
   .mobile-banner
     position: absolute
@@ -248,19 +248,6 @@
       background-size: contain
       height: 100%
       background-repeat: no-repeat
-
-  // .banner-slider
-  //   height: 80vh
-  //   position: relative
-  //   z-index: 1
-  //   display: none
-  //   .bg-img
-  //     background-position: center
-  //     background-size: contain
-  //     height: 100%
-  //     background-repeat: no-repeat
-  //   @media #{$large-up}
-  //     display: block
 
 .problems-container
   position: relative
