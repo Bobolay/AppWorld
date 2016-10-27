@@ -368,7 +368,6 @@
 .opportunities-container
   overflow: hidden
   .opportunity
-    padding: 150px 0
     .text-block
       height: 40vh
       position: relative
@@ -408,12 +407,22 @@
       font-size: 1.125em
       color: $blue
       max-width: 500px
-    .img-background
-      position: relative
-      background-size: contain
-      height: 50vh
-      background-repeat: no-repeat
-      +scale(1.4)
+    // .img-background
+    //   position: relative
+    //   background-size: contain
+    //   height: 50vh
+    //   background-repeat: no-repeat
+    //   +scale(1.4)
+    .img-container
+      text-align: center
+    img
+      max-height: 500px
+      @media #{$small-only}
+        height: 300px
+      @media #{$medium-only}
+        height: 400px
+      @media #{$xxlarge-up}
+        +scale(1.3)
     .align-right
       @media #{$large-up}
         display: flex
@@ -443,6 +452,10 @@
         height: 400px
       .description
         max-width: none
+    @media #{$large-up}
+      padding: 50px 0
+    @media #{$xlarge-up}
+      padding: 150px 0
 
   .opportunities
     .opportunity-short
