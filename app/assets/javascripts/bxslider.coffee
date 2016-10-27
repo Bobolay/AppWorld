@@ -5,7 +5,7 @@ $(document).ready ->
     controls: false
     hideControlOnEnd: true
     speed: 1000
-    pause: 5000
+    pause: 3000
     mode: 'fade'
     auto: true
     easing: 'swing'

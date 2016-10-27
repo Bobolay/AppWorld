@@ -39,13 +39,16 @@
     .large-6.medium-6.small-4.columns
       .animated-text-1
         = inline_svg "svg/text-1.svg"
-      ul.banner-slider
-        li
-          .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup-1.png')})"
-        li
-          .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup-2.png')})"
-        li
-          .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup-3.png')})"
+      .slider-wrapper
+        .monitor-background
+          .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup-0.png')})"
+        ul.banner-slider
+          li
+            .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup-1.png')})"
+          li
+            .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup-2.png')})"
+          li
+            .bg-img style="background-image: url(#{asset_path('photo/top-baner-mockup-3.png')})"
 
 .problems-container#problems
   .row
