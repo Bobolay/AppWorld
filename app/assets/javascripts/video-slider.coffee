@@ -16,3 +16,5 @@ $(document).on "ready", ->
       $(".line.active-line-position").css("left", "33.3%")
     if $index == 2
       $(".line.active-line-position").css("left", "66.6%")
+
+    $("#video iframe").get(0).pauseVideo()

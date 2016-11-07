@@ -472,8 +472,10 @@
         color: $main
         text-transform: uppercase
         +bold
-        height: 50px
+        height: 70px
         line-height: 1
+        @media #{$xxlarge-up}
+          height: 50px
         &:after
           content: ''
           position: absolute
@@ -659,7 +661,7 @@
       opacity: 0.3
       padding-top: 50px
       padding-left: 66px
-      height: 180px
+      height: 200px
       +transition(0.25s)
       span
         font-size: 100px
